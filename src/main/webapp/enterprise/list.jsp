@@ -12,7 +12,7 @@
 	${message}
 <h3>Enterprise</h3>
 <c:if  test="${!empty enterpriseList}">
-<table class="data">
+<table class="data" border=1>
 <tr>
     <th>Name</th>
     <th>Address</th>
@@ -24,10 +24,11 @@
         <td>${e.name} </td>
         <td>${e.address}</td>
         <td>${e.telephone}</td>
-        <td><a href="delete/${e.id}">delete</a></td>
+        <td><a href="delete/${e.id}">delete</a>&nbsp;&nbsp;<a href="update/${e.id}">update</a></td>
     </tr>
 </c:forEach>
 </table>
 </c:if>
+<a href="add.html">Add record</a>
 </body>
 </html>

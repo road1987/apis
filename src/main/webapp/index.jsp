@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<a href="enterprise/hello.html">Say Hello</a>
+<a href="enterprise/list.html">enterprise info manager</a>
 
 </body>
 </html>
