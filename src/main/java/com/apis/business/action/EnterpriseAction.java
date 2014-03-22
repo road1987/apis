@@ -30,7 +30,7 @@ public class EnterpriseAction {
     }
 
     @RequestMapping("enterprise/delete/{enterpriseId}")
-    public String deleteEnterprise(@PathVariable("enterpriseId") int enterpriseId) {
+    public String delete(@PathVariable("enterpriseId") int enterpriseId) {
  
     	service.deleteById(enterpriseId);
  
@@ -47,7 +47,7 @@ public class EnterpriseAction {
     }
     
     @RequestMapping(value = "enterprise/add", method = RequestMethod.POST)
-    public String addEnterprise(@ModelAttribute("enterprise")
+    public String add(@ModelAttribute("enterprise")
 	Enterprise enterprise, BindingResult result) {
     	
     	service.save(enterprise);
@@ -56,7 +56,7 @@ public class EnterpriseAction {
     }
     
     @RequestMapping(value = "enterprise/update/{enterpriseId}", method = RequestMethod.GET)
-    public ModelAndView updateEnterprise(@PathVariable("enterpriseId") int enterpriseId) {
+    public ModelAndView updateForm(@PathVariable("enterpriseId") int enterpriseId) {
     	
         ModelAndView mv = new ModelAndView();  
         mv.addObject("enterprise" , service.getById(enterpriseId));
@@ -65,7 +65,7 @@ public class EnterpriseAction {
     }
     
     @RequestMapping(value = "enterprise/update", method = RequestMethod.POST)
-    public String updateEnterprise(@ModelAttribute("enterprise")
+    public String update(@ModelAttribute("enterprise")
 	Enterprise enterprise, BindingResult result) {
     	
     	service.update(enterprise);

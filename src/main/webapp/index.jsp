@@ -8,7 +8,8 @@
 </head>
 <body>
 
-<a href="enterprise/list.html">enterprise info manager</a>
-
+<p><a href="enterprise/list.html">enterprise info manager</a></p>
+<p><a href="goods/list.html">goods info manager</a></p>
+<p><a href="goodstype/list.html">goods type info manager</a></p>
 </body>
 </html>

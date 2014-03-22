@@ -23,7 +23,6 @@ public class GoodsType {
 		this.id = id;
 	}
 
-
 	public String getName() {
 		return this.name;
 	}
